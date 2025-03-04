@@ -1,0 +1,119 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+nav .menu-btn {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .menu-btn:hover {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+section.content-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    scroll-margin-top: 20px; /* Untuk mengatur jarak scroll */
+}
+
+section.content-section h2 {
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+section.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    nav .menu-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    section.content-section {
+        padding: 20px;
+    }
+
+    section.content-section h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav .menu-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+
+    section.content-section h2 {
+        font-size: 1.5rem;
+    }
+
+    section.content-section p {
+        font-size: 1rem;
+    }
+}
